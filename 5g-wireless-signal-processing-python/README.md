@@ -44,15 +44,28 @@ Because in wireless engineering, if you cannot plot it clearly
 you cannot explain it.
 
 ### Python for Engineers
-Core Python concepts — list comprehension, sets, dictionaries,
-OOP — all applied to wireless problems. No generic examples.
+This is where I practiced core Python concepts — but always using
+wireless problems instead of generic examples.
+
+**Functions** — Shannon capacity, dBm conversion, power combining.
+Writing reusable functions for calculations I kept repeating made
+me realise how much cleaner simulation code can be.
+
+**OOP** — antenna classes, signal encapsulation with property
+validation, channel inheritance with AWGN and Rayleigh fading models.
+Writing a Channel base class with child classes made inheritance
+click for me in a way that generic examples never did.
+
+**Data structures** — list comprehension, sets, dictionaries applied
+to subcarrier allocation, TDL channel models and measurement datasets.
+No boring generic examples — every exercise has an RF context.
 
 ## Why I built this
 
 During my Qualcomm internship I realized that wireless engineers
-who can both understand the RF concepts deeply and implement them
-in code are rare. Most engineers are strong on one side but weak
-on the other. I wanted to be strong on both.
+who can both understand RF concepts deeply and implement them in
+code are rare. Most engineers are strong on one side but weak on
+the other. I wanted to be strong on both.
 
 This project is my attempt to get there.
 
