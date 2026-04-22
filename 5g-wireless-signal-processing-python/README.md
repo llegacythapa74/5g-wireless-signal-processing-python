@@ -1,5 +1,4 @@
 # 5G Wireless Signal Processing — Python
-
 I built this project to bridge the gap between my wireless engineering
 theory and practical Python implementation. Coming from an internship
 at Qualcomm Frankfurt where I worked on 5G modem testing and protocol
@@ -60,8 +59,36 @@ click for me in a way that generic examples never did.
 to subcarrier allocation, TDL channel models and measurement datasets.
 No boring generic examples — every exercise has an RF context.
 
-## Why I built this
+### Advanced Systems
+This is where the theory gets serious. I implemented graduate level
+wireless engineering concepts from scratch — all in Python, all with
+real wireless context.
 
+**QAM Modulation** — built a complete communication system supporting
+BPSK, QPSK and 16QAM with AWGN and Rayleigh fading channels. Compared
+simulated BER against theoretical values across SNR sweep.
+
+**Antenna Array Beamforming** — simulated how a phased array steers
+its beam by applying complex phase shifts to each element. Steering
+vector and beam pattern implemented from scratch. Core concept behind
+5G mmWave beamforming.
+
+**Link Budget Calculator** — FSPL based link budget with SNR calculation
+and maximum distance estimation. Tested at 75 GHz mmWave frequencies.
+
+**MIMO Equalizer** — implemented Zero Forcing equalization on a complex
+channel matrix. Understood how ZF forces inter-stream interference to
+zero and where it breaks down.
+
+**Water Filling Algorithm** — optimal power allocation across MIMO
+eigen-channels. Allocates more power to stronger channels and shuts
+off weak ones completely. Same concept used in 5G NR OFDM scheduling.
+
+**SVD Based MIMO Precoding** — decomposed the channel using SVD and
+compared BER with and without precoding. Showed exactly how precoding
+converts a messy interfering MIMO channel into clean independent streams.
+
+## Why I built this
 During my Qualcomm internship I realized that wireless engineers
 who can both understand RF concepts deeply and implement them in
 code are rare. Most engineers are strong on one side but weak on
